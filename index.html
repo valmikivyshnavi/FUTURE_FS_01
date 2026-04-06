@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyshnavi | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Vyshnavi</h1>
+    <p>Full Stack Web Developer</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a Computer Science student passionate about web development.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+        <h3>Impact Driven Web Application</h3>
+        <p>Focused on solving real-world problems using web technology.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <form onsubmit="return handleSubmit(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <p id="msg"></p>
+</section>
+
+<footer>
+    <p>© 2026 Vyshnavi</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
