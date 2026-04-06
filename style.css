@@ -14,15 +14,26 @@ body {
     color: #333;
 }
 
-/* Header */
-header {
-    background: linear-gradient(135deg, #4a90e2, #6a11cb);
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
-/* Navbar */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: white;
+    color: #2575fc;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* NAVBAR */
 nav {
     display: flex;
     justify-content: center;
@@ -35,49 +46,55 @@ nav a {
     color: white;
     padding: 12px 20px;
     text-decoration: none;
-    transition: 0.3s;
 }
 
 nav a:hover {
     background: #555;
 }
 
-/* Sections */
+/* SECTIONS */
 section {
     padding: 40px 20px;
     max-width: 900px;
     margin: auto;
 }
 
-/* Skills */
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+/* SKILL BARS */
+.skill {
+    margin: 10px 0;
 }
 
-.skills span {
-    background: #4a90e2;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 20px;
+.bar {
+    background: #ddd;
+    height: 8px;
+    border-radius: 5px;
 }
 
-/* Cards */
+.fill {
+    height: 8px;
+    border-radius: 5px;
+}
+
+.html { width: 90%; background: #e44d26; }
+.css { width: 85%; background: #264de4; }
+.js { width: 75%; background: #f0db4f; }
+
+/* CARDS */
 .card {
     background: white;
     padding: 20px;
     margin-top: 15px;
     border-radius: 12px;
+    border-left: 5px solid #4a90e2;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
 }
 
-/* Form */
+/* FORM */
 form {
     display: flex;
     flex-direction: column;
@@ -97,14 +114,13 @@ button {
     padding: 12px;
     border: none;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 button:hover {
     background: #357abd;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     text-align: center;
     padding: 15px;
