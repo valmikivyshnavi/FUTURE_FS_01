@@ -54,14 +54,12 @@
 <section id="contact">
     <h2>Contact</h2>
 
-    <form onsubmit="return handleSubmit(event)">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="yourmail@gmail.com" required>
-        <textarea placeholder="Your Message" required></textarea>
+    <form action="YOUR_FORM_LINK" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send</button>
     </form>
-
-    <p id="msg"></p>
 
     <p>LinkedIn: https://www.linkedin.com/in/your-profile</p>
 </section>
@@ -69,8 +67,6 @@
 <footer>
     <p>© 2026 Vyshnavi</p>
 </footer>
-
-<script src="script.js"></script>
 
 </body>
 </html>
