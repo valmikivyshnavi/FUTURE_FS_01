@@ -4,82 +4,111 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial;
-    background: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+    color: #333;
 }
 
 /* Header */
 header {
-    background: #222;
+    background: linear-gradient(135deg, #4a90e2, #6a11cb);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 /* Navbar */
 nav {
     display: flex;
     justify-content: center;
-    background: #444;
+    background: #222;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    background: #666;
+    background: #555;
 }
 
 /* Sections */
 section {
-    padding: 30px;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background: #4a90e2;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
 }
 
 /* Cards */
 .card {
     background: white;
-    padding: 15px;
-    margin-top: 10px;
-    border-radius: 10px;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.03);
+    transform: translateY(-5px);
 }
 
 /* Form */
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     max-width: 400px;
 }
 
 input, textarea {
-    padding: 10px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
 }
 
 button {
-    background: #222;
+    background: #4a90e2;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border: none;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-    background: #555;
+    background: #357abd;
 }
 
 /* Footer */
 footer {
     text-align: center;
+    padding: 15px;
     background: #222;
     color: white;
-    padding: 10px;
+    margin-top: 20px;
 }
